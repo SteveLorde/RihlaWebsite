@@ -1,4 +1,124 @@
 :root {
-    --primary-backgroundcolor: #ffff;
+    --primary-backgroundcolor: #F53134;
+    --textcolor-first: #F53134;
     --headtext-size: 20px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.page {
+    position: relative;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 3vw 0 3vw;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 60px;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header-text-applinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+}
+
+.link {
+    color: var(--textcolor-first);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.linkalt {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.linkbtn {
+    padding: 8px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: var(--primary-backgroundcolor);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--primary-backgroundcolor);
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title-rihla {
+    font-weight: bold;
+    color: var(--textcolor-first);
+
+}
+
+.header-title {
+    font-weight: bold;
+    color: var(--textcolor-first);
+
+}
+
+.header-titles {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.secondbtn {
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text {
+    font-weight: bold;
+    color: var(--textcolor-first);
 }
