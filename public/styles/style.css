@@ -47,13 +47,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   align-items: center;
 }
 
-.header-text-applinks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2vw;
-}
-
 .link {
   color: var(--textcolor-first);
   text-decoration: none;
@@ -101,8 +94,16 @@ h1, h2, h3, h4, h5, h6, p, a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 23px 0 23px 0;
   background-color: var(--primary-backgroundcolor);
+}
+.header .header-text-applinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 2vw;
+  padding: 20px;
 }
 .header .header-container {
   display: flex;
@@ -110,9 +111,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 25px 0 25px 0;
 }
 .header .header-container-coverimage {
   width: 35vw;
+  padding: 20px;
 }
 .header .header-text {
   display: flex;
@@ -125,6 +128,8 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: white;
 }
 .header .header-title {
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 1.45rem;
   font-weight: bold;
   text-align: center;
@@ -178,7 +183,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .route-section .route-block .route-block-title {
   width: 200px;
   font-size: 24px;
-  text-align: center;
+  text-align: start;
   color: var(--textcolor-first);
   font-weight: bold;
 }
