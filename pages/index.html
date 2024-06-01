@@ -5,16 +5,27 @@
     <title>Rihla</title>
     <link rel="stylesheet" href="../public/styles/style.css">
     <link rel="stylesheet" href="../public/styles/animations.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
     <body class="page">
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <img class="nav-logo" src="../public/assets/images/Logo.svg" alt="rihlalogo"/>
             <ul class="navlist">
-                <li><a class="link" href="#" onclick="SelectPage(0)">Home</a></li>
-                <li><a class="link" href="#" onclick="SelectPage(1)">About</a></li>
+                <li><a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="link" href="#" onclick="SelectPage(0)">Home</a></li>
+                <li><a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="link" href="#" onclick="SelectPage(1)">About</a></li>
             </ul>
         </nav>
+
         <div id="content"></div>
+
+        <footer class="footer">
+            <p class="footer-text">all rights reserved to Rihla™️ 2024</p>
+        </footer>
         <script src="../public/js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            console.log("aos on")
+            AOS.init();
+        </script>
     </body>
 </html>

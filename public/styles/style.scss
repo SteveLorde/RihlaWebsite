@@ -26,11 +26,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .navbar {
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: white;
     padding: 1em 3vw 1em 3vw;
     align-items: center;
+    z-index: 999;
 }
 
 .nav-logo {
@@ -78,6 +82,8 @@ h1, h2, h3, h4, h5, h6, p, a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
     gap: 8px;
     .link-image {
         width: 25px;
@@ -190,6 +196,34 @@ h1, h2, h3, h4, h5, h6, p, a {
             font-weight: bold;
         }
     }
+    .route-end-title {
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--textcolor-first);
+        font-style: italic;
+        text-align: center;
+    }
 }
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about-titlesblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        .about-title {
+            text-align: center;
+            font-size: 22px;
+            color: var(--textcolor-first);
+            font-weight: bolder;
+        }
+    }
+
+}
+
 
 
